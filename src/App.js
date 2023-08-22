@@ -288,7 +288,7 @@ function App() {
 
         <Routes>
           <Route
-            path="/"
+            path="/walmart-chandru"
             element={
               <Index
                 setcurpro={setcurpro}
@@ -344,7 +344,7 @@ function Singleproduct({ datarray,setdatarray,cartitem,addcartitem,removecartite
     <>
       {datarray.map((item) => item.name === name && <Productpage item={item} setdatarray={setdatarray} settitle={settitle} cartitem={cartitem} addcartitem={addcartitem} removecartitem={removecartitem}/>)}
 
-      <Link to="/">go back</Link>
+      <Link to="/walmart-chandru">go back</Link>
     </>
   );
 }
@@ -352,7 +352,7 @@ function Err({ curpro }) {
   return (
     <>
       <h2>Error</h2>
-      <Link to="/">go back</Link>
+      {/* <Link to="/walmart-chandru">go back</Link> */}
       <img src={curpro.img} alt="" />
     </>
   );

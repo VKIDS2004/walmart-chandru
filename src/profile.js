@@ -22,7 +22,7 @@ export default function Profile({curUser,setCurUser,setcartitem}){
         localStorage.removeItem("curuser")
         setcartitem([]);
         setCurUser("");
-        navigate("/");
+        navigate("/walmart-chandru");
     }
     return <div className='profile-con'>
             <div className='profile-box'>
