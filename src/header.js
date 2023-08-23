@@ -51,7 +51,7 @@ function Header({ search, setsearch, cartitems, cartprice,curUser }) {
       </div>
       {curUser?<Link to="/profile" className='profile-com'>
         <div className="myOrder mquery sign-com">
-          <img src={prologohead} className='pro-logo-header'/>
+          <img src={curUser.dp} className='pro-logo-header'/>
           <div className="order-list">
             <p style={{textDecoration:"none"}} className='profile-text'>{/*curUser.name*/}My Profile</p>
           </div>

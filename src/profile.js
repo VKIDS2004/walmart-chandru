@@ -26,7 +26,7 @@ export default function Profile({curUser,setCurUser,setcartitem}){
     }
     return <div className='profile-con'>
             <div className='profile-box'>
-                <img src={prologo} className='pro-logo'/>
+                <img src={curUser.dp||prologo} className='pro-logo'/>
                     <h2>My Profile</h2>
                     <table id='customers' className='pro-tab'>
                         <tr><td>Name</td><td>{curUser.name}</td></tr>

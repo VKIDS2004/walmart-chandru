@@ -137,6 +137,10 @@
 
 .pro-logo-header{
   width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid white;
 }
 .cart {
   display: flex;
@@ -199,7 +203,7 @@
 
   position: fixed;
   top: 107px;
-  z-index: 3;
+  z-index: 1;
 }
 
 .left-nav {
@@ -1399,6 +1403,9 @@ marquee{
 }
 .pro-logo{
   width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 .pro-tab{
   margin: 10px 0;
@@ -1468,4 +1475,5 @@ marquee{
   .mquery {
     display: none;
   }
+  
 }
