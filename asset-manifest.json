@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/walmart-chandru/static/css/main.56287369.css",
-    "main.js": "/walmart-chandru/static/js/main.a3711b3b.js",
+    "main.css": "/walmart-chandru/static/css/main.7bb4219f.css",
+    "main.js": "/walmart-chandru/static/js/main.232367a7.js",
     "static/media/locationB.png": "/walmart-chandru/static/media/locationB.e1c796b4cac24766f4ec.png",
     "static/media/location.png": "/walmart-chandru/static/media/location.9c935a12e076294939e9.png",
     "static/media/cart.png": "/walmart-chandru/static/media/cart.6d3f2aa5a426dcbe59c3.png",
@@ -28,11 +28,11 @@
     "static/media/heart .svg": "/walmart-chandru/static/media/heart .3def643c9c073603cd2058f2ba99396f.svg",
     "static/media/department.svg": "/walmart-chandru/static/media/department.80ca327f127e8e02a99320cc59c90367.svg",
     "static/media/search.svg": "/walmart-chandru/static/media/search.08bdbec3fd9f2e8903734e18445d3672.svg",
-    "main.56287369.css.map": "/walmart-chandru/static/css/main.56287369.css.map",
-    "main.a3711b3b.js.map": "/walmart-chandru/static/js/main.a3711b3b.js.map"
+    "main.7bb4219f.css.map": "/walmart-chandru/static/css/main.7bb4219f.css.map",
+    "main.232367a7.js.map": "/walmart-chandru/static/js/main.232367a7.js.map"
   },
   "entrypoints": [
-    "static/css/main.56287369.css",
-    "static/js/main.a3711b3b.js"
+    "static/css/main.7bb4219f.css",
+    "static/js/main.232367a7.js"
   ]
 }
