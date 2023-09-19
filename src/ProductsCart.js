@@ -125,7 +125,7 @@ function Productlist({ item, cartitem, addcartitem, removecartitem }) {
     }
 
   }
-
+ 
 
   return (
     <div className="item">

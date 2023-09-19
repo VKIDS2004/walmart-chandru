@@ -14,6 +14,7 @@ import {
   Route,
   Link,
   useParams,
+  Navigate,
 } from "react-router-dom";
 import Cart from "./cart";
 import Signin from "./signin";
@@ -310,6 +311,8 @@ function App() {
           <Route path="/createAccount" element={<Createaccount />} />
           <Route path="/profile" element={<Profile curUser={curUser} setCurUser={setCurUser} setcartitem={setcartitem}/>} />
           <Route path="*" element={<Err curpro={curpro} />} />
+
+          
         </Routes>
         <Footer />
       </Router>

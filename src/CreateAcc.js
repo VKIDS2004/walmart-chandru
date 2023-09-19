@@ -23,12 +23,17 @@ export default function Createaccount({users,setUsers}){
    
 
     const handleChnage=(e)=>{
-        console.log(e.target.files)
-        const data = new FileReader()
-        data.addEventListener('load',()=>{
-            setdp(data.result)
-        })
-        data.readAsDataURL(e.target.files[0])
+        console.log(e.target.files["0"].size)
+        if(e.target.files["0"].size<150000){
+            const data = new FileReader()
+            data.addEventListener('load',()=>{
+                setdp(data.result)
+            })
+            data.readAsDataURL(e.target.files[0])
+        }
+        else{
+            alert("file must be less than 150kb")
+        } 
     }
 
     function createAcc(e){

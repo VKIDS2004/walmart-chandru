@@ -9,6 +9,7 @@ import actimg8 from './images/fields/gal2 img 08.jpg'
 import actimg9 from './images/fields/gal2 img 09.jpg'
 import actimg10 from './images/fields/gal2 img 10.jpg'
 import actimg11 from './images/fields/gal2 img 11.jpg'
+import actimg12 from './images/fields/gal2 img 03.jpg'
 
 const actionitem = [
   { img:actimg1, name: "Home" },
@@ -22,6 +23,7 @@ const actionitem = [
   { img:actimg9, name: "Household" },
   { img:actimg10, name: "Baby" },
   { img:actimg11, name: "Patio and garden" },
+  { img:actimg12, name: "Sports" }
 ];
 export default function Actioncart() {
   return (
