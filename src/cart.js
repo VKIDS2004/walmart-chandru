@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 
 
-export default function Cart({cartitem,removecartitem,clearcartitem,cartprice}){ 
+export default function Cart({cartitem,removecartitem,clearcartitem,cartprice,How}){ 
   useEffect(function(){
     document.title="Walmart | cart"
 
@@ -11,15 +11,24 @@ export default function Cart({cartitem,removecartitem,clearcartitem,cartprice}){
 },[])
 
     return<>
-            {cartitem.length?<Cartrender cartitem={cartitem} removecartitem={removecartitem} clearcartitem={clearcartitem} cartprice={cartprice}/>:<Noitems/>}
+            {cartitem.length?<Cartrender cartitem={cartitem} How={How} removecartitem={removecartitem} clearcartitem={clearcartitem} cartprice={cartprice}/>:<Noitems How={How}/>}
     </>
 }
 
 
-function Cartrender({cartitem,removecartitem,clearcartitem,cartprice}){
+function Cartrender({cartitem,removecartitem,clearcartitem,cartprice,How}){
     const [modalShown, toggleModal] = useState(false);
     return<>
-        <div className="cart-con">
+        <div className="cart-con" style={
+          How
+            ? {
+                filter: "blur(5px)",
+                // backgroundColor: "rgb(100,0,0)",
+                cursor:"not-allowed",
+                overflow: "hidden",
+              }
+            : {}
+        }>
             <h1 style={{textAlign:"center"}}>Cart items</h1>
             <div className="cart-products">
                 {cartitem.map(item=><CartPro item={item} removecartitem={removecartitem}/>)}
@@ -52,9 +61,18 @@ function CartPro({item,removecartitem}){
 }
 
 
-function Noitems(){
+function Noitems({How}){
 
-    return<div className='Noitems-con'>
+    return<div className='Noitems-con' style={
+      How
+        ? {
+            filter: "blur(5px)",
+            // backgroundColor: "rgb(100,0,0)",
+            cursor:"not-allowed",
+            overflow: "hidden",
+          }
+        : {}
+    }>
             <div className='Noitems'>
                 <h1 className='noitem-p'>No items in cart</h1>
             </div>

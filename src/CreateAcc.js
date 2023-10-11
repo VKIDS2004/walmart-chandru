@@ -3,7 +3,7 @@ import {useEffect, useRef, useState} from "react"
 import {Link,useNavigate} from "react-router-dom";
 
 
-export default function Createaccount({users,setUsers}){
+export default function Createaccount({How}){
 
     const [dp,setdp] = useState();
     const [name,setName] = useState('');
@@ -63,7 +63,16 @@ export default function Createaccount({users,setUsers}){
      
     }
 
-    return<div className='crt-acc-con'>
+    return<div className='crt-acc-con' style={
+        How
+          ? {
+              filter: "blur(5px)",
+              // backgroundColor: "rgb(100,0,0)",
+              cursor:"not-allowed",
+              overflow: "hidden",
+            }
+          : {}
+      }>
         <div className='crt-acc-box'>
             <h1 style={{color:"#222"}}>Create Account</h1>
             <p style={{fontSize:"13px"}}>or <Link to="/signin" className='create-acc-btn'>Sign in</Link></p>

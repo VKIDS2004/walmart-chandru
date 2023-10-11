@@ -5,7 +5,7 @@ import {
     useNavigate
   } from "react-router-dom";
 
-export default function Signin({setCurUser}){
+export default function Signin({setCurUser,How}){
 
     const [email,setemail] = useState('');
     const [pass,setpass] = useState('');
@@ -52,7 +52,16 @@ export default function Signin({setCurUser}){
     }
     
     return<>
-        <div className='sign-con'>
+        <div className='sign-con' style={
+          How
+            ? {
+                filter: "blur(5px)",
+                // backgroundColor: "rgb(100,0,0)",
+                cursor:"not-allowed",
+                overflow: "hidden",
+              }
+            : {}
+        }>
             <div className="sign-box">
                 <h1 style={{color:"#222"}}>Sign In</h1>
                 <p style={{fontSize:"13px"}}>or <Link to="/createAccount" className='create-acc-btn'>create an account</Link></p>

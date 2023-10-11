@@ -1,4 +1,5 @@
 import "./App.css";
+
 import ProductsCart from "./ProductsCart";
 import Gallery from "./gallery";
 import Header from "./header";
@@ -306,10 +307,10 @@ function App() {
             }
           />
           <Route path="/:names" element={<Singleproduct datarray={datarray} setdatarray={setdatarray} cartitem={cartitem} addcartitem={addcartitem} removecartitem={removecartitem}/>} />
-          <Route path="/cart" element={<Cart cartitem={cartitem} removecartitem={removecartitem} clearcartitem={clearcartitem} cartprice={cartprice}/>} />
-          <Route path="/signin" element={<Signin setCurUser={setCurUser} />} />
-          <Route path="/createAccount" element={<Createaccount />} />
-          <Route path="/profile" element={<Profile curUser={curUser} setCurUser={setCurUser} setcartitem={setcartitem}/>} />
+          <Route path="/cart" element={<Cart cartitem={cartitem} How={How} removecartitem={removecartitem} clearcartitem={clearcartitem} cartprice={cartprice}/>} />
+          <Route path="/signin" element={<Signin setCurUser={setCurUser} How={How}/>} />
+          <Route path="/createAccount" element={<Createaccount How={How}/>} />
+          <Route path="/profile" element={<Profile curUser={curUser} setCurUser={setCurUser} setcartitem={setcartitem} How={How}/>} />
           <Route path="*" element={<Err curpro={curpro} />} />
 
           
