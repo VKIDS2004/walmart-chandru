@@ -10,7 +10,7 @@ function Navigation({children,setHow,How}) {
       <div className='left-nav' onClick={() => { setHow((s) => s === true ? false : true) }}>
         <img className="howlogo" src={howlogo} alt=""/>
         <a>How do you want your items?</a>
-        <img src={How ? downarrow : uparrow} className="arrow" alt="" />
+        <img src={How ?uparrow: downarrow } className="arrow" alt="" />
         <p>|</p>
         <img className="location" src={loclogo} alt="" />
         <p>Karur, Tamilnadu, 639004</p>
