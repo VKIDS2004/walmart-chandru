@@ -57,7 +57,7 @@ function Header({ search, setsearch, cartitems, cartprice,curUser }) {
           </div>
         </div>
       </Link>:<Link to="/signin" className='sign-com'>
-        <div className="myOrder mquery sign-com">
+        <div className="myOrder mquer sign-com">
         <img src={signinlogo} className="order-logo" style={{width:"20px"}} />
 
           <div className="order-list">

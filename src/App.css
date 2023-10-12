@@ -1478,18 +1478,11 @@ marquee{
   }
 }
 
-@media only screen and (min-width: 600px){
+@media only screen and (max-width: 600px) {
   .search{
     flex-grow: 1;
   }
-}
 
-@media only screen and (max-width: 800px) {
-  .right-nav a {
-    display: none;
-  }
-}
-@media only screen and (max-width: 600px) {
   .pro-page-con  {
     margin-top: 100px;
   }
@@ -1588,6 +1581,12 @@ marquee{
     font-size: 20px;
   }
   
+}
+
+@media only screen and (max-width: 800px) {
+  .right-nav a {
+    display: none;
+  }
 }
 
 /* -------------------------- responsive ----------------------------------- */
@@ -1844,7 +1843,9 @@ font-size: 23px;
     width: 100%;
     padding: 10px;
   }
-
+  .header{
+    padding: 0px 20px;
+  }
 
   /* -------------------------- product page ---------------------- */
 
