@@ -87,7 +87,7 @@ export default function Createaccount({How}){
                 <input type="text" value={password} onChange={e=>setPassword(e.target.value)} required/>
                 <p>Phone No</p>
                 <input type="tel" value={phone} onChange={e=>setPhone(e.target.value)} required/>
-                <button className='crt-acc-sub-btn' type="submit">Sign in</button>
+                <button className='crt-acc-sub-btn' type="submit">Sign Up</button>
             </form>
         </div>
     </div>

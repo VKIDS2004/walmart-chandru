@@ -33,7 +33,7 @@ export default function Signin({setCurUser,How}){
                 }
                 localStorage.setItem("curuser",JSON.stringify(finded))
                 setCurUser(finded)
-                navigate('/walmart-chandru')
+                navigate('/')
             }
             else{
                 alert("invalid user, please check your Email id")

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import { Link } from "react-router-dom"
 
 
 export default function Cart({cartitem,removecartitem,clearcartitem,cartprice,How}){ 
@@ -47,8 +48,11 @@ function Cartrender({cartitem,removecartitem,clearcartitem,cartprice,How}){
 function CartPro({item,removecartitem}){
 
     return<div className="cart-pro">
+
             <div className="cart-img">
+              <Link to={`/${item.name}`}>
                 <img src={item.img}/>
+              </Link>
             </div>
             <div className="cart-des">
                 <p>{item.seller}</p>
@@ -73,9 +77,7 @@ function Noitems({How}){
           }
         : {}
     }>
-            <div className='Noitems'>
                 <h1 className='noitem-p'>No items in cart</h1>
-            </div>
     </div>
 }
 
@@ -96,7 +98,10 @@ function Modal({ children, shown, close ,cartitem,cartprice}) {
             e.stopPropagation();
           }}
         >
+          <div className="bill-head">
+          <h4>Bill Booking</h4>
           <button onClick={close} className='model-close-btn'>X</button>
+          </div>
           <div className="bill">
                 <table  id="customers">
                 <tr><th>No</th><th>Products</th><th>Quantity</th><th>Price</th></tr>

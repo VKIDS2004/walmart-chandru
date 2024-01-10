@@ -18,7 +18,7 @@ function Header({ search, setsearch, cartitems, cartprice,curUser }) {
   return (
     <div className="header">
       
-      <Link to="/walmart-chandru">
+      <Link to="/">
         <img src={headlogo} />
       </Link>
 
