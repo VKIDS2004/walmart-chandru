@@ -92,7 +92,7 @@ function App() {
 
   return (
     <>
-      <Router basename="/walmart">
+      <Router basename="/walmart-chandru">
         <div className="hole_content">
 
         <Header
